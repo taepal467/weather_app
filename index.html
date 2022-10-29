@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/fc83ccfc39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="form-container">
+            <form id="form">
+                <label for="location"></label>
+                <input type="text" name="location" id="location" placeholder="Enter your city">
+        
+                <button type="submit" class="submit-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="temp-btns">
+                <button type="button" class="cels-btn btn">&#8451;</button>
+                <span class="divider">/</span>
+                <button type="button" class="fahr-btn btn">&#8457;</button>
+            </div>
+        </div>
+
+        <div class="cityTitle">
+            <h1 id="city">Weather App</h1>
+        </div>
+
+        <div class="weatherDisplay">
+            <div class="weatherDescription">
+                <h2 id="feels-like"></h2>
+                <h2 id="degree"></h2>
+                <h3 id="description"></h3>
+        
+                <div class="weatherTemp">
+                    <h4 id="high-temp"></h4>
+                    <h4 id="low-temp"></h4>
+                </div>
+            </div>
+
+            <div class="wind">
+                <h6 id="wind"></h6>
+                <h6 id="humidity"></h6>
+            </div>
+        </div>
+    
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
