@@ -18,10 +18,7 @@ async function getAPI(city) {
         getWeatherData(weatherData);
      
     } catch(err) {
-        // console.log('Location not found');
-        const errHeader = document.createElement('header');
-        document.form.appendChild(errHeader);
-        errHeader.textContent = 'Location Not Found';
+        alert('Location not found');
     }
 }
 
@@ -89,20 +86,25 @@ const displayWeatherInfo = (weatherInfo) => {
     if ( description.textContent.includes('clear sky') ) {
         document.body.classList.add('clearSky');
     } 
-    if ( description.textContent.includes('scattered') || description.textContent.includes('few')) {
+     if ( description.textContent.includes('scattered') || description.textContent.includes('few')) {
         document.body.classList.add('fewClouds');
-    } else if ( description.textContent.includes('overcast') ) {
+    } 
+    if ( description.textContent.includes('overcast clouds') ) {
         document.body.classList.add('overcast');
-    } else if ( description.textContent.includes('broken') ) {
+    } 
+    if ( description.textContent.includes('broken') ) {
         document.body.classList.add('brokenClouds');
     } 
      if ( description.textContent.includes('light') ) {
         document.body.classList.add('lightRain');
-    } else if ( description.textContent.includes('rain') ) {
+    } 
+    if ( description.textContent.includes('rain') ) {
         document.body.classList.add('rain')
-    } else if ( description.textContent.includes('snow') ) {
+    } 
+    if ( description.textContent.includes('snow') ) {
         document.body.classList.add('snow');
-    } else if ( description.textContent.includes('mist') ) {
+    } 
+    if ( description.textContent.includes('mist') ) {
         document.body.classList.add('mist');
     } 
 }
