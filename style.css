@@ -127,6 +127,18 @@ input:focus {
    grid-template-columns: repeat(2, 150px);
 }
 
+/* FOOTER */
+footer {
+    font-size: 1.25rem;
+    padding-top: 45px;
+}
+
+.footer-link {
+    color: aliceblue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /* BACKGROUND IMAGES */
 .fewClouds {
     background: url('images/taylor-van-riper-yQorCngxzwI-unsplash.jpeg') no-repeat center center fixed;
