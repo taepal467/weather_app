@@ -48,6 +48,16 @@ input:focus {
     color: aliceblue;
 }
 
+.submit-btn {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+/* CELSIUS AND FAHRENHEIT BUTTONS */
 .temp-btns {
     padding: 20px 0 10px 0;
 }
@@ -68,15 +78,6 @@ input:focus {
 
 .btn:hover {
     color: black;
-}
-
-.submit-btn {
-    background-color: transparent;
-    border: none;
-    color: aliceblue;
-    font-size: 2rem;
-    cursor: pointer;
-    padding-left: 20px;
 }
 
 /* HEADERS */
