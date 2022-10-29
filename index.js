@@ -85,28 +85,23 @@ const displayWeatherInfo = (weatherInfo) => {
 
     if ( description.textContent.includes('clear sky') ) {
         document.body.classList.add('clearSky');
-    } 
-     if ( description.textContent.includes('scattered') || description.textContent.includes('few')) {
+    } else if ( description.textContent.includes('scattered') || description.textContent.includes('few')) {
         document.body.classList.add('fewClouds');
-    } 
-    if ( description.textContent.includes('overcast clouds') ) {
+    } else if ( description.textContent.includes('overcast clouds') ) {
         document.body.classList.add('overcast');
-    } 
-    if ( description.textContent.includes('broken') ) {
+    } else if ( description.textContent.includes('broken') ) {
         document.body.classList.add('brokenClouds');
-    } 
-     if ( description.textContent.includes('light') ) {
+    } else if ( description.textContent.includes('light') ) {
         document.body.classList.add('lightRain');
-    } 
-    if ( description.textContent.includes('rain') ) {
+    } else if ( description.textContent.includes('rain') ) {
         document.body.classList.add('rain')
-    } 
-    if ( description.textContent.includes('snow') ) {
+    } else if ( description.textContent.includes('snow') ) {
         document.body.classList.add('snow');
-    } 
-    if ( description.textContent.includes('mist') ) {
+    } else if ( description.textContent.includes('mist') ) {
         document.body.classList.add('mist');
-    } 
+    } else {
+        document.body.style.backgroundImage = "url('images/jeremy-bishop-X3YzPHn3Jus-unsplash.jpeg')";
+    }
 }
 
 form.addEventListener('submit', (e) => {
