@@ -18,7 +18,10 @@ async function getAPI(city) {
         getWeatherData(weatherData);
      
     } catch(err) {
-        console.log('Location not found');
+        // console.log('Location not found');
+        const errHeader = document.createElement('header');
+        document.form.appendChild(errHeader);
+        errHeader.textContent = 'Location Not Found';
     }
 }
 
@@ -59,10 +62,8 @@ const fahrenheitToCelsius = (weatherInfo) => {
 }
 
 const celsiusToFahrenheit = (weatherInfo) => {
-
     const fahrBtn = document.querySelector('.fahr-btn');
     fahrBtn.addEventListener("click", () => {
-    
         feelsLike.textContent = `Feels like: ${weatherInfo["feels_like"]}\u00B0F`;
         degree.textContent = `${weatherInfo.temp}\u00B0F`;
         highTemp.textContent = `High: ${weatherInfo.temp_max}\u00B0F`;
@@ -87,13 +88,15 @@ const displayWeatherInfo = (weatherInfo) => {
 
     if ( description.textContent.includes('clear sky') ) {
         document.body.classList.add('clearSky');
-    } else if ( description.textContent.includes('scattered') || description.textContent.includes('few')) {
+    } 
+    if ( description.textContent.includes('scattered') || description.textContent.includes('few')) {
         document.body.classList.add('fewClouds');
     } else if ( description.textContent.includes('overcast') ) {
         document.body.classList.add('overcast');
     } else if ( description.textContent.includes('broken') ) {
         document.body.classList.add('brokenClouds');
-    } else if ( description.textContent.includes('light') ) {
+    } 
+     if ( description.textContent.includes('light') ) {
         document.body.classList.add('lightRain');
     } else if ( description.textContent.includes('rain') ) {
         document.body.classList.add('rain')
