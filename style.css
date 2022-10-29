@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('images/jeremy-bishop-X3YzPHn3Jus-unsplash.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Cormorant', serif;
+    text-align: center;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORM */
+.form-container {
+    padding-top: 30px;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px #888888;
+    padding: 5px 25px;
+    color: aliceblue;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 30px;
+}
+
+input:focus {
+    background-color: transparent;
+    border: none;
+}
+
+::placeholder {
+    color: aliceblue;
+}
+
+.temp-btns {
+    padding: 20px 0 10px 0;
+}
+
+.divider {
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 1.75rem;
+}
+
+.btn:hover {
+    color: black;
+}
+
+.submit-btn {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    font-size: 2rem;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+/* HEADERS */
+#city {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+#feels-like {
+    font-size: 2rem;
+}
+
+#degree {
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+#description {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+#high-temp,
+#low-temp {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+#wind,
+#humidity {
+    font-size: 1.75rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* WEATHER INFO DISPLAY */
+.weatherDisplay {
+    display: grid;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr) ) ;
+}
+
+.weatherTemp {
+    display: grid;
+   grid-template-columns: repeat(2, 150px);
+}
+
+/* BACKGROUND IMAGES */
+.fewClouds {
+    background: url('images/taylor-van-riper-yQorCngxzwI-unsplash.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.clearSky {
+    background: url('images/marko-blazevic-GFFGe2eGmiM-unsplash.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.overcast {
+    background: url('images/nathan-anderson-uftVkZ1ikn4-unsplash.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.brokenClouds {
+    background: url('images/robert-murray-toCqTyxsT4Q-unsplash.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.lightRain {
+    background: url('images/kelly-sikkema-1DrouD7mB1E-unsplash.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.thunderstorm {
+    /* source for background image: https://www.thoughtco.com/thunderstorm-vs-tornado-vs-hurricane-3444281 */
+    background: url('images/GettyImages-673747736-5b1989c3fa6bcc003614911a.webp') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rain {
+    /* source for background image: https://www.wcnc.com/article/weather/rain-charlotte-seattle-weather/275-2d9d57f4-ed9e-48e2-9850-b82b33480020 */
+    background: url('images/eab76bdf-c893-435f-a899-cc10a8014f08_1140x641.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.snow {
+    background: url('images/aditya-vyas-PzhmEp_aDU4-unsplash.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mist {
+    background: url('images/tobias-huske-Bj6p5SZWQiY-unsplash.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
